@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #000;
+    height:200vh;
+}
+section {
+    position: fixed;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #bg {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    object-fit: fill;
+    pointer-events: none;
+    z-index: 1;
+}
+section #dark-overley {
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+section #flag1 {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+    z-index:2;
+}
+section #cloud1 {
+    position: absolute;
+    max-width:600px;
+    top:100px;
+    left:50px;
+    z-index: 2;
+}
+section #cloud2 {
+    position: absolute;
+    max-width:600px;
+    top:200px;
+    right:50px;
+    z-index: 2;
+}
+section #flag2 {
+    position: absolute;
+    width:200%;
+    height:266px;
+    left:0;
+    bottom:0;
+    z-index: 10;
+    background: url('img/flag.png');
+    background-position-y: 266px;
+    background-size: contain;
+}
+section #text1 {
+    position: absolute;
+    width:100%;
+    top:250px;
+    text-align: center;
+    z-index: 9;
+    font-size: 6em;
+    text-transform: uppercase;
+    color:#fff;
+    text-shadow: 0 0 10px #000;
+
+}
+section #text2 {
+    position: absolute;
+    width:100%;
+    top:-400px;
+    text-align: center;
+    z-index: 9;
+    font-size: 4em;
+    text-transform: capitalize;
+    color:#fff;
+    text-shadow: 0 0 10px #000;
+    transform:scale(0.0)
+}
